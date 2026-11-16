@@ -4,6 +4,14 @@ Sistema de análise inteligente de documentos PDF utilizando Retrieval-Augmented
 
 O projeto permite enviar um documento PDF, realizar perguntas sobre seu conteúdo e receber respostas fundamentadas nos trechos recuperados, com referências ao documento e às páginas.
 
+## Demonstração online
+
+Experimente o DocumentAnalysisAI diretamente pelo navegador:
+
+[**Acessar DocumentAnalysisAI**](https://documentanalysisaifrmt.streamlit.app/)
+
+A aplicação permite enviar documentos PDF, realizar perguntas em português e consultar os trechos utilizados como fontes.
+
 ## Tecnologias
 
 - Python

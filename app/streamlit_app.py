@@ -107,7 +107,12 @@ PERGUNTA:
 {pergunta}
 """
 
-    cliente = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    chave = os.getenv("GEMINI_API_KEY")
+
+    if not chave:
+        chave = st.secrets["GEMINI_API_KEY"]
+
+    cliente = genai.Client(api_key=chave)   
 
     resposta = cliente.models.generate_content(
         model="gemini-3.5-flash-lite",
